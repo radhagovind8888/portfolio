@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 20vw;
+    width: 100vw;
+    height: 100vh;
+}
+ul a{
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+.row.no-gutters {
+    margin: 0;
+    padding: 0;
+}
+  
+p::first-letter {
+    color: red;
+    font-size: larger;
+}
+ul li a:hover::before{
+    content: "--> ";
+    color: azure;
+}
+ul li a:hover::after{
+    content: " | ";
+    color: azure;
+}
+.sidebar1{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.sidebar1::-webkit-scrollbar {
+    display: none;
+}
+.content1{
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.content1::-webkit-scrollbar {
+    display: none;
+}
+#skills img {
+    width: 100px;
+    height: auto;
+}
+#skills figure:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 1s;
+    border-radius: 1rem;
+    transform: scale(1.05);
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2 {
+    font-family: 'Playfair Display', serif;
+}
+html {
+    font-size: 100%; /* Default 16px */
+}
+
+@media (max-width: 767.98px) {
+    .sidebar1 {
+        min-height: fit-content;
+        overflow: hidden;
+        overflow-x: hidden;
+        height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    .sidebar1 ul{
+        padding: 0%;
+        margin: 0%;
+        text-align: left;
+    }
+    .sidebar1::-webkit-scrollbar {
+        display: none;
+    }
+    ul li a:hover::before{
+      display: none;
+    }
+    ul li a:hover::after{
+        display: none;
+    }
+    #about img{
+        display: none;
+        grid-row: 0;
+    }
+    .content1{
+        padding: 0px;
+        margin: 0px
+    };
+}
+
